@@ -57,7 +57,7 @@ window.onload = function() {
 
   // Show lives
   comments = function() {
-    showLives.innerHTML = "You have " + lives + " lives";
+    showLives.innerHTML = "You have " + lives + " guesses left.";
     if (lives < 1) {
       letters.parentNode.removeChild(letters);
       var pcWord = word.toUpperCase();
@@ -75,6 +75,7 @@ window.onload = function() {
   // OnClick Function
   check = function() {
     list.onclick = function() {
+
       var liButtonClicked = this.innerHTML;
       this.setAttribute("class", "active disabled");
       this.onclick = null;
@@ -122,10 +123,10 @@ window.onload = function() {
 
   play();
 
-  // Reset
-  document.getElementById("reset").onclick = function() {
-    correctGuessLetter.parentNode.removeChild(correctGuessLetter);
-    letters.parentNode.removeChild(letters);
-    play();
-  };
+  // // Reset
+  // document.getElementById("reset").onclick = function() {
+  //   correctGuessLetter.parentNode.removeChild(correctGuessLetter);
+  //   letters.parentNode.removeChild(letters);
+  //   play();
+  // };
 };
