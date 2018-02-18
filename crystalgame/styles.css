@@ -70,6 +70,17 @@ a.linkButton {
 	border-radius: 10px;
 }
 
+#matchme {
+	font-size: 100px;
+	text-align: center;
+}
+#total {
+	font-size: 100px;
+	font-weight: 900;
+	color: #FFBC2B;
+	text-align: center;
+}
+
 a.linkButton:hover {
 	background: linear-gradient(to left, rgba(255,188,43,1) 50%, rgba(10, 15, 16, 1) 50% );
 	text-decoration : none;
@@ -220,6 +231,15 @@ hr {
 	width: 50%;
 }
 
+.items {
+	height: 80px;
+	width: 80px;
+	padding:5px;
+	align-content: center;
+	background-color: #1a1a1a;
+	color: #fff;
+	margin: 20px;
+}
 /* */
 #who {
 	padding: 5rem 0;
