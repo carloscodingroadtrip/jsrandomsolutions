@@ -366,12 +366,14 @@ address strong,
 
 .active {
   opacity: 0.1;
-  cursor:not-allowed;
+  pointer-events: none;
   text-decoration: line-through;
+
 }
 
 .active:hover{
   cursor:not-allowed;
+  pointer-events: none;
   background-color: #2d2d2d;
   transition: -moz-transition: all 1s ease-in;
   transition: -moz-transition:all 0.3s ease-in-out;
