@@ -232,14 +232,17 @@ hr {
 }
 
 .items {
-	height: 80px;
-	width: 80px;
+	width: 150px;
+	height: 150px;
 	padding:5px;
-	align-content: center;
-	background-color: #1a1a1a;
-	color: #fff;
-	margin: 20px;
+	margin: 10px;
 }
+
+.crystals img {
+	height: 100px;
+	width: 100px;
+}
+
 /* */
 #who {
 	padding: 5rem 0;
@@ -364,11 +367,12 @@ address strong,
       border: solid 1px #7fefe7;
 }
 
+#gamingButtons {
+	display: none;
+}
 .active {
   opacity: 0.1;
-  pointer-events: none;
-  text-decoration: line-through;
-
+  pointer-events: none; /* will disable the buttons*/
 }
 
 .active:hover{
